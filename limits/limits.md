@@ -16,7 +16,7 @@
 If the left- and right-hand limits exist but are not equal, the limit does **not exist** at that point.  
 This is called a **jump discontinuity**.
 
-![Jump Discontinuity](../images/jump-discontinuity.jpg)
+<img src="../images/jump-discontinuity.jpg" alt="Jump Discontinuity" width="400"/>
 
 ---
 
@@ -27,7 +27,7 @@ This creates a **vertical asymptote**.
 
 **Example**: $f(x) = \frac{1}{x^2}$
 
-![Infinite Limit](../images/infinite-limit.png)
+<img src="../images/infinite-limit.png" alt="Infinite Limit" width="400"/>
 
 ---
 
@@ -37,18 +37,14 @@ A function has a **removable discontinuity** if the limit exists, but the functi
 
 **Example**:  
 The function  
-$$
-f(x) = \frac{x^2 - 1}{x - 1}
-$$  
+$$f(x) = \frac{x^2 - 1}{x - 1}$$  
 has a hole at $x = 1$, since the expression is undefined there.
 
 If we define:  
-$$
-f(1) = 3
-$$  
+$$f(1) = 3$$  
 we introduce a **removable discontinuity**.
 
-![Removable Discontinuity](../images/removable-discontinuity.png)
+<img src="../images/removable-discontinuity.png" alt="Removable Discontinuity" width="400"/>
 
 ---
 
