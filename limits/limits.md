@@ -15,7 +15,7 @@
 
 If the left- and right-hand limits exist but are not equal, the limit does **not exist** at that point. This is called a **jump discontinuity**.
 
-![Jump Discontinuity](limits_graphs/jump-discontinuity.png)
+![Jump Discontinuity](images/jump-discontinuity.png)
 
 ---
 
@@ -25,7 +25,7 @@ As \( x \) approaches a value, the function might grow arbitrarily large. This c
 
 Example: \( f(x) = \frac{1}{x^2} \)
 
-![Infinite Limit](limits_graphs/infinite-limit.png)
+![Infinite Limit](images/infinite-limit.png)
 
 ---
 
@@ -37,7 +37,7 @@ Example:
 \( f(x) = \frac{x^2 - 1}{x - 1} \) has a hole at \( x = 1 \)  
 Define \( f(1) = 3 \) to make it discontinuous
 
-![Removable Discontinuity](limits_graphs/removable-discontinuity.png)
+![Removable Discontinuity](images/removable-discontinuity.png)
 
 ---
 
