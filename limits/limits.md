@@ -14,13 +14,13 @@
 
 To find the slope of a curve at a point (i.e., a tangent), we approximate it using secant lines.
 
-Let \( f(x) = x^2 \), and consider the slope of the secant line from \( x = 1 \) to \( x = 1 + h \):
+Let $f(x) = x^2$, and consider the slope of the secant line from $x = 1$ to $x = 1 + h$:
 
 $$
 \frac{f(1 + h) - f(1)}{h}
 $$
 
-The **tangent line slope** is the limit as \( h \to 0 \):
+The **tangent line slope** is the limit as $h \to 0$:
 
 $$
 \lim_{h \to 0} \frac{(1 + h)^2 - 1}{h} = \lim_{h \to 0} \frac{2h + h^2}{h} = \lim_{h \to 0} (2 + h) = 2
@@ -32,13 +32,13 @@ $$
 
 ### The Velocity Problem
 
-If \( s(t) \) is the position of an object, the **average velocity** over time interval \( [t, t + h] \) is:
+If $s(t)$ is the position of an object, the **average velocity** over time interval $[t, t + h]$ is:
 
 $$
 \frac{s(t + h) - s(t)}{h}
 $$
 
-The **instantaneous velocity** at time \( t \) is:
+The **instantaneous velocity** at time $t$ is:
 
 $$
 \lim_{h \to 0} \frac{s(t + h) - s(t)}{h}
@@ -56,9 +56,13 @@ $$
 \lim_{x \to a} f(x) = L
 $$
 
-means the value of \( f(x) \) can be made arbitrarily close to \( L \) by taking \( x \) sufficiently close (but not equal) to \( a \).
+means the value of $f(x)$ can be made arbitrarily close to $L$ by taking $x$ sufficiently close (but not equal) to $a$.
 
-If the left-hand and right-hand limits exist and are equal, the two-sided limit exists.
+If the left-hand and right-hand limits exist and are equal, the two-sided limit exists:
+
+$$
+\lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x) = L
+$$
 
 ---
 
@@ -67,19 +71,19 @@ If the left-hand and right-hand limits exist and are equal, the two-sided limit 
 Use these rules to simplify and compute limits algebraically:
 
 - **Sum Rule**:  
-  \( \lim_{x \to a} [f(x) + g(x)] = \lim f(x) + \lim g(x) \)
+  $\lim_{x \to a} [f(x) + g(x)] = \lim_{x \to a} f(x) + \lim_{x \to a} g(x)$
 
 - **Product Rule**:  
-  \( \lim_{x \to a} [f(x) \cdot g(x)] = \lim f(x) \cdot \lim g(x) \)
+  $\lim_{x \to a} [f(x) \cdot g(x)] = \lim_{x \to a} f(x) \cdot \lim_{x \to a} g(x)$
 
-- **Quotient Rule** (if \( \lim g(x) \ne 0 \)):  
-  \( \lim_{x \to a} \frac{f(x)}{g(x)} = \frac{\lim f(x)}{\lim g(x)} \)
+- **Quotient Rule** (if $\lim g(x) \ne 0$):  
+  $\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{\lim f(x)}{\lim g(x)}$
 
 - **Power Rule**:  
-  \( \lim_{x \to a} [f(x)]^n = [\lim f(x)]^n \)
+  $\lim_{x \to a} [f(x)]^n = [\lim_{x \to a} f(x)]^n$
 
 - **Root Rule**:  
-  \( \lim_{x \to a} \sqrt[n]{f(x)} = \sqrt[n]{\lim f(x)} \)
+  $\lim_{x \to a} \sqrt[n]{f(x)} = \sqrt[n]{\lim_{x \to a} f(x)}$
 
 ---
 
@@ -91,7 +95,7 @@ $$
 \lim_{x \to a} f(x) = L
 $$
 
-if for every \( \varepsilon > 0 \), there exists \( \delta > 0 \) such that whenever:
+if for every $\varepsilon > 0$, there exists $\delta > 0$ such that whenever:
 
 $$
 0 < |x - a| < \delta \quad \Rightarrow \quad |f(x) - L| < \varepsilon
@@ -100,9 +104,9 @@ $$
 This formalizes the idea of “getting arbitrarily close.”
 
 ### Example:  
-Prove that \( \lim_{x \to 2} (3x + 1) = 7 \)
+Prove that $\lim_{x \to 2} (3x + 1) = 7$
 
-Let \( \varepsilon > 0 \). Choose \( \delta = \frac{\varepsilon}{3} \). Then:
+Let $\varepsilon > 0$. Choose $\delta = \frac{\varepsilon}{3}$. Then:
 
 $$
 |x - 2| < \delta \Rightarrow |3x + 1 - 7| = 3|x - 2| < 3\delta = \varepsilon
