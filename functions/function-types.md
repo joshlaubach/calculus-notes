@@ -2,14 +2,30 @@
 
 ## Key Ideas
 
-- Calculus problems involve many function types: polynomial, rational, exponential, logarithmic, trigonometric, and piecewise-defined.
-- Understanding the **domain**, **range**, **behavior**, and **graph** of these functions is essential before applying limits, derivatives, or integrals.
+Calculus problems use many function types — and each behaves differently.
+
+Knowing their:
+
+* **Domain and range**
+* **Graph and continuity**
+* **Growth, decay, and oscillation**
+
+...is essential before applying limits, derivatives, or integrals.
+
+You’ll most commonly encounter:
+
+- Polynomial
+- Rational
+- Radical (root)
+- Exponential
+- Logarithmic
+- Trigonometric and inverse trig
+- Piecewise-defined
+- Absolute value
 
 ---
 
-## Definitions and Core Examples
-
-### 1. Polynomial Functions
+## Polynomial Functions
 
 A **polynomial function** is of the form:
 
@@ -18,139 +34,336 @@ f(x) = a_n x^n + a_{n-1} x^{n-1} + \dots + a_1 x + a_0
 $$
 
 - Domain: all real numbers
-- Smooth and continuous
-- Examples:
-  - $f(x) = x^2 - 3x + 2$
-  - $g(x) = 4x^5 - x^3 + 7$
+- Graph: smooth and continuous (no breaks or sharp turns)
+- Degree determines shape and end behavior
 
 ---
 
-### 2. Rational Functions
+<details>
+<summary><strong><u>Example 1:</u></strong> Analyze $f(x) = x^3 - 3x + 2$</summary>
 
-A **rational function** is a ratio of two polynomials:
+- This is a degree 3 polynomial
+- Domain: all real numbers ($\mathbb{R}$)
+- Graph is continuous and smooth
+- End behavior:
+  - As $x \to \infty$, $f(x) \to \infty$
+  - As $x \to -\infty$, $f(x) \to -\infty$
+
+</details>
+
+<details>
+<summary><strong><u>Example 2:</u></strong> Determine the degree and domain of $f(x) = 4x^5 - x^3 + 7$</summary>
+
+- Highest power: $x^5$ ⇒ degree = 5
+- Domain: all real numbers
+- Graph has smooth turns and no discontinuities
+
+So:
+
+- Degree: $\boxed{5}$
+- Domain: $\boxed{(-\infty, \infty)}$
+
+</details>
+
+---
+
+## Rational Functions
+
+A **rational function** is the ratio of two polynomials:
 
 $$
 f(x) = \frac{P(x)}{Q(x)}
 $$
 
 - Domain: all real numbers **except** where $Q(x) = 0$
-- May have vertical or horizontal asymptotes
-- Example: $f(x) = \frac{x^2 - 1}{x - 3}$
+- May have **vertical asymptotes** (where denominator = 0)
+- May have **horizontal or oblique asymptotes** (based on degrees)
 
 ---
 
-### 3. Root (Radical) Functions
+<details>
+<summary><strong><u>Example 1:</u></strong> Analyze $f(x) = \frac{x^2 - 1}{x - 3}$</summary>
 
-A **radical function** involves square roots or other roots:
+- Domain: exclude where denominator = 0 ⇒ $x \ne 3$
+- Vertical asymptote at $x = 3$
+- Simplify numerator: $x^2 - 1 = (x - 1)(x + 1)$
+- No cancellation with denominator ⇒ $x = 3$ is a true asymptote
 
-$$
-f(x) = \sqrt[n]{x}, \quad f(x) = \sqrt{x - a}
-$$
+So:
 
-- Domain depends on the **even/odd** root:
-  - Even root: input must be non-negative
-  - Odd root: all real numbers allowed
-- Example: $f(x) = \sqrt{4 - x^2}$
+- Domain: $\boxed{(-\infty, 3) \cup (3, \infty)}$
+
+</details>
+
+<details>
+<summary><strong><u>Example 2:</u></strong> Determine asymptotes of $f(x) = \frac{x^2 + 2x + 1}{x^2 - 4}$</summary>
+
+- Domain: exclude $x = \pm 2$
+- Vertical asymptotes: $x = -2$, $x = 2$
+- Degrees of numerator and denominator are equal (both degree 2)
+
+Horizontal asymptote:
+
+- Ratio of leading coefficients: $\frac{1}{1} = \boxed{1}$
+
+</details>
 
 ---
 
-### 4. Exponential Functions
+## Root (Radical) Functions
+
+A **radical function** involves roots such as:
+
+$$
+f(x) = \sqrt[n]{x}, \quad \text{or} \quad f(x) = \sqrt{x - a}
+$$
+
+- The **domain depends on the index**:
+  - Even root (e.g. square root): input must be $\geq 0$
+  - Odd root (e.g. cube root): all real numbers allowed
+- Often used in geometry and physics (distance, area, etc.)
+
+---
+
+<details>
+<summary><strong><u>Example 1:</u></strong> Find the domain of $f(x) = \sqrt{4 - x^2}$</summary>
+
+The expression inside the square root must be $\geq 0$:
+
+$4 - x^2 \geq 0 \Rightarrow -2 \leq x \leq 2$
+
+So:
+
+- **Domain**: $\boxed{[-2, 2]}$
+- **Range**: Since max value is $\sqrt{4} = 2$, and lowest is $0$:
+  - $\boxed{[0, 2]}$
+
+</details>
+
+<details>
+<summary><strong><u>Example 2:</u></strong> Find the domain of $f(x) = \sqrt[3]{x - 5}$</summary>
+
+This is a cube root (odd index), so all real values are allowed.
+
+- **Domain**: $\boxed{(-\infty, \infty)}$
+
+</details>
+
+---
+
+## Exponential Functions
 
 An **exponential function** has a constant base raised to a variable exponent:
 
 $$
-f(x) = a^x, \quad a > 0,\ a \ne 1
+f(x) = a^x, \quad \text{where } a > 0,\ a \ne 1
 $$
 
-- Always positive: $f(x) > 0$
 - Domain: all real numbers
-- Example: $f(x) = 2^x,\quad f(x) = e^x$
+- Range: $(0, \infty)$
+- Graph increases (if $a > 1$) or decreases (if $0 < a < 1$)
+- The function $f(x) = e^x$ is especially important in calculus
 
 ---
 
-### 5. Logarithmic Functions
+<details>
+<summary><strong><u>Example 1:</u></strong> Analyze $f(x) = 2^x$</summary>
 
-The **inverse** of exponential functions:
+- Base $a = 2 > 1$ → increasing function
+- Domain: all real numbers $\boxed{(-\infty, \infty)}$
+- Range: always positive → $\boxed{(0, \infty)}$
+- Horizontal asymptote at $y = 0$
+
+</details>
+
+<details>
+<summary><strong><u>Example 2:</u></strong> Compare $f(x) = e^x$ and $g(x) = e^{-x}$</summary>
+
+- $f(x) = e^x$ is increasing  
+- $g(x) = e^{-x} = \frac{1}{e^x}$ is decreasing
+- Both have range $(0, \infty)$ and horizontal asymptote at $y = 0$
+- Reflections of each other over the $y$-axis
+
+</details>
+
+---
+
+## Logarithmic Functions
+
+A **logarithmic function** is the inverse of an exponential function:
 
 $$
-f(x) = \log_b x, \quad f(x) = \ln x
+f(x) = \log_b x, \quad \text{or} \quad f(x) = \ln x
 $$
 
 - Domain: $x > 0$
 - Range: all real numbers
-- Useful for solving equations with variables in exponents
+- Logarithmic functions grow slowly and are undefined for $x \leq 0$
+- Useful for solving equations where the variable is in the exponent
 
 ---
 
-### 6. Trigonometric Functions
+<details>
+<summary><strong><u>Example 1:</u></strong> Analyze $f(x) = \ln x$</summary>
 
-**Periodic functions** based on angle input (in radians):
+- **Domain**: $x > 0 \Rightarrow \boxed{(0, \infty)}$
+- **Range**: all real numbers ⇒ $\boxed{(-\infty, \infty)}$
+- Vertical asymptote at $x = 0$
+- Passes through $(1, 0)$ since $\ln(1) = 0$
 
-- $f(x) = \sin x,\quad \cos x,\quad \tan x$
-- Periodic, bounded, and often used to model waves
-- Domain of sine/cosine: all real numbers  
-- Domain of tangent: all real numbers except odd multiples of $\frac{\pi}{2}$
+</details>
+
+<details>
+<summary><strong><u>Example 2:</u></strong> Find the domain of $f(x) = \log_3(x - 2)$</summary>
+
+Inside the log must be positive:
+
+$x - 2 > 0 \Rightarrow x > 2$
+
+- **Domain**: $\boxed{(2, \infty)}$
+- **Range**: $\boxed{(-\infty, \infty)}$
+
+</details>
 
 ---
 
-### 7. Inverse Trigonometric Functions
 
-Used to reverse trig operations:
+## Trigonometric Functions
+
+Trigonometric functions are **periodic** and based on angle input (usually in radians).
+
+Common trig functions:
+
+- $f(x) = \sin x$
+- $f(x) = \cos x$
+- $f(x) = \tan x$
+
+Key characteristics:
+
+- $\sin x$ and $\cos x$ are **bounded** between $-1$ and $1$
+- $\tan x$ has **vertical asymptotes** at odd multiples of $\frac{\pi}{2}$
+- All are periodic and appear frequently in oscillation and wave modeling
+
+---
+
+<details>
+<summary><strong><u>Example 1:</u></strong> Analyze $f(x) = \cos x$</summary>
+
+- **Domain**: all real numbers ⇒ $\boxed{(-\infty, \infty)}$
+- **Range**: $\boxed{[-1, 1]}$
+- Period: $2\pi$
+- Even function: $\cos(-x) = \cos x$
+
+</details>
+
+<details>
+<summary><strong><u>Example 2:</u></strong> Analyze $f(x) = \tan x$</summary>
+
+- **Domain**: all real numbers except odd multiples of $\frac{\pi}{2}$
+- **Vertical asymptotes** at $x = \frac{\pi}{2} + n\pi$
+- **Range**: all real numbers ⇒ $\boxed{(-\infty, \infty)}$
+- Period: $\pi$
+
+</details>
+
+--- 
+
+## Inverse Trigonometric Functions
+
+Inverse trig functions “undo” the original trig functions.
+
+Common notation:
 
 - $\sin^{-1} x = \arcsin x$
 - $\cos^{-1} x = \arccos x$
 - $\tan^{-1} x = \arctan x$
 
-Restricted domains ensure these are functions.
+Since trig functions are not one-to-one, their **domains are restricted** to make them invertible.
 
 ---
 
-### 8. Piecewise-Defined Functions
+<details>
+<summary><strong><u>Example 1:</u></strong> Analyze $f(x) = \arcsin x$</summary>
 
-Defined by **different rules** on different intervals:
+- **Domain**: $\boxed{[-1, 1]}$
+- **Range**: $\boxed{\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]}$
+- Passes through $(0, 0)$
+- Increasing on its entire domain
 
-$$
-f(x) = 
-\begin{cases}
-x^2 & x < 0 \\\\
-x + 1 & x \ge 0
-\end{cases}
-$$
+</details>
 
-- Important for modeling abrupt changes (e.g., taxes, cost brackets)
-- Always examine **endpoints** for continuity and differentiability
+<details>
+<summary><strong><u>Example 2:</u></strong> Analyze $f(x) = \arctan x$</summary>
+
+- **Domain**: all real numbers ⇒ $\boxed{(-\infty, \infty)}$
+- **Range**: $\boxed{\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)}$
+- Horizontal asymptotes at $y = \pm \frac{\pi}{2}$
+- Odd function: $\arctan(-x) = -\arctan x$
+
+</details>
+
+--- 
+
+## Hyperbolic Functions
+
+Hyperbolic functions are analogs of trigonometric functions, defined using exponentials.
+
+The basic hyperbolic functions are:
+
+- $\sinh x = \frac{e^x - e^{-x}}{2}$
+- $\cosh x = \frac{e^x + e^{-x}}{2}$
+- $\tanh x = \frac{\sinh x}{\cosh x}$
+
+Key properties:
+
+- $\cosh x \ge 1$ for all $x$
+- $\sinh x$ and $\cosh x$ are smooth and continuous
+- $\cosh x$ is even; $\sinh x$ is odd
 
 ---
 
-### 9. Absolute Value Function
+<details>
+<summary><strong><u>Example 1:</u></strong> Compute $\sinh(0)$ and $\cosh(0)$</summary>
 
-Defined as:
+Use definitions:
 
-$$
-f(x) = |x| =
-\begin{cases}
-x & x \ge 0 \\\\
--x & x < 0
-\end{cases}
-$$
+- $\sinh(0) = \frac{e^0 - e^{-0}}{2} = \frac{1 - 1}{2} = \boxed{0}$
+- $\cosh(0) = \frac{e^0 + e^{-0}}{2} = \frac{1 + 1}{2} = \boxed{1}$
 
-- V-shaped graph
-- Domain: all real numbers
-- Not differentiable at $x = 0$
+</details>
+
+<details>
+<summary><strong><u>Example 2:</u></strong> Show that $\cosh^2 x - \sinh^2 x = 1$</summary>
+
+Use definitions:
+
+- $\cosh x = \frac{e^x + e^{-x}}{2}$
+- $\sinh x = \frac{e^x - e^{-x}}{2}$
+
+Compute:
+
+- $\cosh^2 x = \left(\frac{e^x + e^{-x}}{2}\right)^2 = \frac{e^{2x} + 2 + e^{-2x}}{4}$
+- $\sinh^2 x = \left(\frac{e^x - e^{-x}}{2}\right)^2 = \frac{e^{2x} - 2 + e^{-2x}}{4}$
+
+Subtract:
+
+- $\cosh^2 x - \sinh^2 x = \frac{e^{2x} + 2 + e^{-2x} - (e^{2x} - 2 + e^{-2x})}{4} = \frac{4}{4} = \boxed{1}$
+
+</details>
+
 
 ---
 
-## Tutor's Tip
+## Josh’s Tip
 
-Many mistakes in calculus come from misidentifying the function type. Before you:
-
-- Take a limit
-- Compute a derivative
-- Set up an integral
-
-**Know what you're dealing with.** Ask:
-- Is this rational? Exponential? Trig?
-- Does it have asymptotes or discontinuities?
-- What’s the domain?
-
-Recognizing function types leads to better intuition and cleaner problem-solving.
+> Don’t just memorize function names — **get to know their behavior**.
+>
+> Ask yourself:
+> 
+> - What’s the **domain**?
+> - What does the **graph** look like?
+> - Are there **asymptotes**, **corners**, or **discontinuities**?
+>
+> Before you try limits, derivatives, or integrals, know **what kind of function** you're working with.
+>
+> If you can recognize the type, you’ll know what rules to apply and where the pitfalls are. That’s how you think like a calculus student.
