@@ -4,10 +4,10 @@
 
 - The **limit** of a function describes its behavior as the input approaches a certain value.
 - Limits may exist even when the function is **not defined** at that point.
-- A function is **continuous** at \( x = a \) if:
-  1. \( f(a) \) is defined  
-  2. \( \lim_{x \to a} f(x) \) exists  
-  3. \( \lim_{x \to a} f(x) = f(a) \)
+- A function is **continuous** at $x = a$ if:
+  1. $f(a)$ is defined  
+  2. $\lim_{x \to a} f(x)$ exists  
+  3. $\lim_{x \to a} f(x) = f(a)$
 
 ---
 
@@ -16,16 +16,16 @@
 If the left- and right-hand limits exist but are not equal, the limit does **not exist** at that point.  
 This is called a **jump discontinuity**.
 
-![Jump Discontinuity](../images/jump-discontinuity.png)
+![Jump Discontinuity](../images/jump-discontinuity.jpg)
 
 ---
 
 ## Infinite Limits
 
-As \( x \) approaches a value, the function might grow arbitrarily large.  
+As $x$ approaches a value, the function might grow arbitrarily large.  
 This creates a **vertical asymptote**.
 
-**Example**: \( f(x) = \frac{1}{x^2} \)
+**Example**: $f(x) = \frac{1}{x^2}$
 
 ![Infinite Limit](../images/infinite-limit.png)
 
@@ -37,15 +37,15 @@ A function has a **removable discontinuity** if the limit exists, but the functi
 
 **Example**:  
 The function  
-\[
+$$
 f(x) = \frac{x^2 - 1}{x - 1}
-\]  
-has a hole at \( x = 1 \), since the expression is undefined there.  
+$$  
+has a hole at $x = 1$, since the expression is undefined there.
 
 If we define:  
-\[
+$$
 f(1) = 3
-\]  
+$$  
 we introduce a **removable discontinuity**.
 
 ![Removable Discontinuity](../images/removable-discontinuity.png)
