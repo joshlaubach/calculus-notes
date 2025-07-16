@@ -1,4 +1,4 @@
-# Limits and Continuity
+# Limits
 
 ## Key Ideas
 
