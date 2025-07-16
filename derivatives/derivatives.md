@@ -498,20 +498,20 @@ So $\ln(1.05) \approx \ln(1) + dy = 0 + 0.05 = \boxed{0.05}$
 
 </details>
 
-## Josh’s Notes
+## Josh’s Tip
 
-> Every derivative rule you’ve learned — power, product, chain, implicit — is just a way to answer the same question:
+> The derivative is the foundation of everything in calculus.
 >
-> **How is this function changing right now?**
+> Every rule — whether it’s product, chain, or implicit — is just a different way to ask:
 >
-> Before you start differentiating, ask:
+> * How is this function changing right now?
+> * What’s the slope of the tangent line?
+> * Can I model this with a simple linear approximation?
 >
-> - What kind of expression is this? (Sum? Product? Composition?)
-- Do I need a shortcut rule or the limit definition?
-- Am I solving for slope, rate, or approximation?
+> Think of the derivative as a **toolbox**:
 >
-> Think geometrically: the **derivative is the slope of the tangent** — a snapshot of the function's behavior.
+> * Use the **limit definition** when asked to build from scratch.
+> * Use **rules** (power, product, chain) to move fast and clean.
+> * Use **linearization** and **differentials** to estimate and approximate.
 >
-> And think practically: the **derivative is a tool** — for building linear models, estimating values, and solving real-world problems.
-
-> Keep your rules sharp, your notation clean, and your reasoning clear. Everything else builds on this.
+> Mastering derivatives isn’t about memorizing — it’s about recognizing **what kind of change** you're working with.
