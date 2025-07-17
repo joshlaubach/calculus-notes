@@ -1,6 +1,6 @@
 # Derivatives
 
-## Key Ideas and Definitions
+## Key Ideas
 
 Derivatives describe how a function changes. They measure the **instantaneous rate of change** or **slope of the tangent line** at a point.
 
