@@ -1,6 +1,6 @@
 # Continuity
 
-## Key Ideas
+## Definition
 
 A function is **continuous at a point** $x = a$ if:
 
