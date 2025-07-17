@@ -22,7 +22,7 @@ $$
 means that as $x$ gets close to $a$, $f(x)$ gets close to $L$.  
 The limit is about **approach**, not necessarily what happens at $x = a$.
 
-<img src="../images/limit.png" alt="What is a limit?" width="400"/>
+<img src="../images/limits.png" alt="What is a limit?" width="400"/>
 
 ---
 
