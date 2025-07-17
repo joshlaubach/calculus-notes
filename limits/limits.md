@@ -39,7 +39,7 @@ The two-sided limit exists **if and only if** the left- and right-hand limits ar
 
 ### 1. Direct Substitution
 
-If $f(a)$ is defined and continuous, just plug in:
+If $f(a)$ is defined, just plug in:
 
 $$
 \lim_{x \to 3} (2x^2 - x + 5) = 2(3)^2 - 3 + 5 = 20
@@ -104,7 +104,7 @@ Limits can be computed using the following properties:
 
 ---
 
-### 5. The Precise ($\varepsilon$-$\delta$) Definition
+### 5. The Precise ($\varepsilon - \delta$) Definition
 
 We say
 
