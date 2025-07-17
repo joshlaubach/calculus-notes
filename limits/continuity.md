@@ -74,16 +74,16 @@ The graph “jumps” from one value to another.
 **Example:**  
 Let:
 
-- $f(x) = 1$ if $x < 0$  
-- $f(x) = 2$ if $x \ge 0$
+- $f(x) = 3$ if $x < 0$  
+- $f(x) = 1$ if $x \ge 0$
 
 Then:
 
-- $\lim_{x \to 0^-} f(x) = 1$  
-- $\lim_{x \to 0^+} f(x) = 2$  
+- $\lim_{x \to 0^-} f(x) = 3$  
+- $\lim_{x \to 0^+} f(x) = 1$  
 → No single limit at $x = 0$ → jump discontinuity
 
-<img src="../images/jump-discontinuity.jpg" alt="Jump Discontinuity" width="400"/>
+<img src="../images/one-sided-limit.jpg" alt="Jump Discontinuity" width="400"/>
 
 
 ### 3. Infinite Discontinuity
@@ -95,7 +95,7 @@ Let $f(x) = \dfrac{1}{x - 2}$
 As $x \to 2$, $f(x)$ goes to $\infty$ or $-\infty$  
 → Infinite discontinuity at $x = 2$
 
-<img src="../images/infinite-limit.png" alt="Infinite Limit" width="400"/>
+<img src="../images/infinite-discontinuity.png" alt="Infinite Limit" width="400"/>
 
 ---
 
