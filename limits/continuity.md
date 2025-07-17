@@ -83,7 +83,7 @@ Then:
 - $\lim_{x \to 0^+} f(x) = 1$  
 → No single limit at $x = 0$ → jump discontinuity
 
-<img src="../images/one-sided-limit.jpg" alt="Jump Discontinuity" width="400"/>
+<img src="../images/one-sided-limit.png" alt="Jump Discontinuity" width="400"/>
 
 
 ### 3. Infinite Discontinuity
