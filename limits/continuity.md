@@ -41,7 +41,6 @@ Now check:
 So $f$ is **not continuous** at $x = 2$ — this is a **removable discontinuity**.
 </details>
 
-<img src="../images/removable-discontinuity.png" alt="Removable Discontinuity" width="400"/>
 
 ---
 
